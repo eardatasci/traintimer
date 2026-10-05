@@ -51,6 +51,8 @@ struct MenuContentView: View {
                 }
                 .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { listHeight = $0 }
             }
+            // `.never` rather than `.hidden`: macOS keeps "hidden" indicators visible when a mouse is connected.
+            .scrollIndicators(.never)
             .frame(height: min(listHeight, maxListHeight))
         }
     }
