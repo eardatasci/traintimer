@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0064420CB7924290E7B09B69 /* TrainTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEFF6CCA5B8D24B0D8C67F0 /* TrainTimerApp.swift */; };
+		23331AE169EA9B7F227797C6 /* stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 118859AEC3474365EAB0CA29 /* stations.csv */; };
+		46360211456D5ED1CB328BFA /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D0234B36602B50C3B9E7C /* LocationProvider.swift */; };
+		5463835D0B5B8FD511A5972E /* RouteBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCBB3F642A63F9C8BC79CB /* RouteBullet.swift */; };
+		6CE2C0D4773487D3A804AEF2 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 288A2D17987D3F4A54CC72A5 /* AppIcon.icon */; };
+		80117495BBF8F69675457A9B /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A8A8096F977A943909502 /* AppInfo.swift */; };
+		D0D12C8319346CF79F87A880 /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5F65A20B37AC4B0681029 /* MenuContentView.swift */; };
+		E331EACA03E49F7906807BB9 /* TrainTimerCore in Frameworks */ = {isa = PBXBuildFile; productRef = ABB0183077B4B7AEFBCC6D1F /* TrainTimerCore */; };
+		FF35F33F2F084FF52882AA91 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC7B69E1FB23F92E85C590 /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		053A8A8096F977A943909502 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		118859AEC3474365EAB0CA29 /* stations.csv */ = {isa = PBXFileReference; path = stations.csv; sourceTree = "<group>"; };
+		288A2D17987D3F4A54CC72A5 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		32F178B67A9658026DCB1C41 /* TrainTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainTimer.entitlements; sourceTree = "<group>"; };
+		45DC7B69E1FB23F92E85C590 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		49F08C245EAFAB46649B3D65 /* TrainTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA5F65A20B37AC4B0681029 /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
+		610D0234B36602B50C3B9E7C /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		7878EBEEA655240F305A00E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A24BC55CB4DEAF807DA0AA40 /* TrainTimerCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrainTimerCore; path = TrainTimerCore; sourceTree = SOURCE_ROOT; };
+		C2DCBB3F642A63F9C8BC79CB /* RouteBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBullet.swift; sourceTree = "<group>"; };
+		CDEFF6CCA5B8D24B0D8C67F0 /* TrainTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimerApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66ED2AE22D739C4A9FD6C72C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E331EACA03E49F7906807BB9 /* TrainTimerCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		464F7EC5FCCCF34FAF8930BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				118859AEC3474365EAB0CA29 /* stations.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8D1356CE66AD984EA40FE45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49F08C245EAFAB46649B3D65 /* TrainTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC0256E4A677A6156AF4A995 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A24BC55CB4DEAF807DA0AA40 /* TrainTimerCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E8BFB38E5F6BB969ECC79969 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				288A2D17987D3F4A54CC72A5 /* AppIcon.icon */,
+				053A8A8096F977A943909502 /* AppInfo.swift */,
+				45DC7B69E1FB23F92E85C590 /* AppModel.swift */,
+				7878EBEEA655240F305A00E9 /* Info.plist */,
+				610D0234B36602B50C3B9E7C /* LocationProvider.swift */,
+				5EA5F65A20B37AC4B0681029 /* MenuContentView.swift */,
+				C2DCBB3F642A63F9C8BC79CB /* RouteBullet.swift */,
+				32F178B67A9658026DCB1C41 /* TrainTimer.entitlements */,
+				CDEFF6CCA5B8D24B0D8C67F0 /* TrainTimerApp.swift */,
+				464F7EC5FCCCF34FAF8930BB /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FF5AC07411202B9443C25000 = {
+			isa = PBXGroup;
+			children = (
+				E8BFB38E5F6BB969ECC79969 /* App */,
+				BC0256E4A677A6156AF4A995 /* Packages */,
+				A8D1356CE66AD984EA40FE45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDE839E0B4F395CCA017F3B9 /* TrainTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55005F194295E70A3E601AF /* Build configuration list for PBXNativeTarget "TrainTimer" */;
+			buildPhases = (
+				C6BD92C8F443AF992E45F596 /* Sources */,
+				34C46DA41E3D6F07914D5BCB /* Resources */,
+				66ED2AE22D739C4A9FD6C72C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrainTimer;
+			packageProductDependencies = (
+				ABB0183077B4B7AEFBCC6D1F /* TrainTimerCore */,
+			);
+			productName = TrainTimer;
+			productReference = 49F08C245EAFAB46649B3D65 /* TrainTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A9C2465FAFDF4A6BC1A81DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EDE839E0B4F395CCA017F3B9 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 17453E4FB6C6A9E06C19A7B5 /* Build configuration list for PBXProject "TrainTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FF5AC07411202B9443C25000;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F5726550E708255156E36E60 /* XCLocalSwiftPackageReference "TrainTimerCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A8D1356CE66AD984EA40FE45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDE839E0B4F395CCA017F3B9 /* TrainTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34C46DA41E3D6F07914D5BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE2C0D4773487D3A804AEF2 /* AppIcon.icon in Resources */,
+				23331AE169EA9B7F227797C6 /* stations.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BD92C8F443AF992E45F596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80117495BBF8F69675457A9B /* AppInfo.swift in Sources */,
+				FF35F33F2F084FF52882AA91 /* AppModel.swift in Sources */,
+				46360211456D5ED1CB328BFA /* LocationProvider.swift in Sources */,
+				D0D12C8319346CF79F87A880 /* MenuContentView.swift in Sources */,
+				5463835D0B5B8FD511A5972E /* RouteBullet.swift in Sources */,
+				0064420CB7924290E7B09B69 /* TrainTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54108A2CB91ACC9318598CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88BE20A0DFD2CAD348C0094B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/TrainTimer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eardatasci.TrainTimer;
+				PRODUCT_NAME = TrainTimer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		9A62CF32C209A7D4712EA716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C2A1A1497CFED4312850E98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/TrainTimer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eardatasci.TrainTimer;
+				PRODUCT_NAME = TrainTimer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17453E4FB6C6A9E06C19A7B5 /* Build configuration list for PBXProject "TrainTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54108A2CB91ACC9318598CA2 /* Debug */,
+				9A62CF32C209A7D4712EA716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A55005F194295E70A3E601AF /* Build configuration list for PBXNativeTarget "TrainTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BE20A0DFD2CAD348C0094B /* Debug */,
+				C2A1A1497CFED4312850E98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F5726550E708255156E36E60 /* XCLocalSwiftPackageReference "TrainTimerCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TrainTimerCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABB0183077B4B7AEFBCC6D1F /* TrainTimerCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrainTimerCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6A9C2465FAFDF4A6BC1A81DA /* Project object */;
+}

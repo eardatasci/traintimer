@@ -1,0 +1,13 @@
+GTFS Stop ID,Station ID,Complex ID,Division,Line,Stop Name,Borough,CBD,Daytime Routes,Structure,GTFS Latitude,GTFS Longitude,North Direction Label,South Direction Label,ADA,ADA Northbound,ADA Southbound,ADA Notes,Georeference
+L29,138,138,BMT,Canarsie,Canarsie-Rockaway Pkwy,Bk,false,L,At Grade,40.646654,-73.90185,Manhattan,Last Stop,1,1,1,NaN,POINT (-73.90185 40.646654)
+A31,166,618,IND,8th Av - Fulton St,14 St,M,true,A C E,Subway,40.740893,-74.00169,Uptown,Downtown,1,1,1,NaN,POINT (-74.00169 40.740893)
+L03,117,602,BMT,Canarsie,14 St-Union Sq,M,true,L,Subway,40.734789,-73.99073,West Side,Brooklyn,1,1,1,NaN,POINT (-73.99073 40.734789)
+L05,118,118,BMT,Canarsie,3 Av,M,true,L,Subway,40.732849,-73.986122,West Side,Brooklyn,0,0,0,NaN,POINT (-73.986122 40.732849)
+L06,119,119,BMT,Canarsie,1 Av,M,true,L,Subway,40.730953,-73.981628,West Side,Brooklyn,1,1,1,NaN,POINT (-73.981628 40.730953)
+L02,116,601,BMT,Canarsie,6 Av,M,true,L,Subway,40.737335,-73.996786,West Side,Brooklyn,1,1,1,NaN,POINT (-73.996786 40.737335)
+635,406,602,IRT,Lexington Av,14 St-Union Sq,M,true,4 5 6,Subway,40.734673,-73.989951,Uptown,Downtown,0,0,0,NaN,POINT (-73.989951 40.734673)
+S09,522,522,SIR,Staten Island,Tottenville,SI,false,SIR,At Grade,40.512764,-74.251961,Ferry,Last Stop,1,1,1,NaN,POINT (-74.251961 40.512764)
+R20,15,602,BMT,Broadway - Brighton,14 St-Union Sq,M,true,N Q R W,Subway,40.735736,-73.990568,Uptown,Downtown,1,1,1,NaN,POINT (-73.990568 40.735736)
+S31,501,501,SIR,Staten Island,St George,SI,false,SIR,Open Cut,40.643748,-74.073643,Last Stop,South Shore,1,1,1,NaN,POINT (-74.073643 40.643748)
+L01,115,618,BMT,Canarsie,8 Av,M,true,L,Subway,40.739777,-74.002578,Last Stop,Brooklyn,1,1,1,NaN,POINT (-74.002578 40.739777)
+L08,120,120,BMT,Canarsie,Bedford Av,Bk,false,L,Subway,40.717304,-73.956872,Manhattan,Outbound,1,1,1,NaN,POINT (-73.956872 40.717304)

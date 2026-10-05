@@ -1,0 +1,50 @@
+{
+  "fill" : {
+    "solid" : "srgb:0.07843,0.07843,0.07843,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "letter.png",
+          "name" : "letter"
+        },
+        {
+          "image-name" : "bullet.png",
+          "name" : "bullet"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    },
+    {
+      "layers" : [
+        {
+          "image-name" : "ring.png",
+          "name" : "ring"
+        },
+        {
+          "image-name" : "rule.png",
+          "name" : "rule"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.4
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

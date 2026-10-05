@@ -1,0 +1,53 @@
+name: TrainTimer
+options:
+  bundleIdPrefix: com.eardatasci
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+packages:
+  TrainTimerCore:
+    path: TrainTimerCore
+targets:
+  TrainTimer:
+    type: application
+    platform: macOS
+    sources:
+      - App
+    dependencies:
+      - package: TrainTimerCore
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Train Timer
+        CFBundleName: Train Timer
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        LSApplicationCategoryType: public.app-category.travel
+        LSUIElement: true
+        NSHumanReadableCopyright: "© 2026 Arda Tasci. MIT License."
+        NSLocationUsageDescription: Train Timer uses your location to find the subway stations nearest to you.
+        NSLocationWhenInUseUsageDescription: Train Timer uses your location to find the subway stations nearest to you.
+    entitlements:
+      path: App/TrainTimer.entitlements
+      properties:
+        # Hardened Runtime blocks Location Services without this.
+        com.apple.security.personal-information.location: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.eardatasci.TrainTimer
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        PRODUCT_NAME: TrainTimer
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: YES
+schemes:
+  TrainTimer:
+    build:
+      targets:
+        TrainTimer: all
+    test:
+      targets:
+        - package: TrainTimerCore/TrainTimerCoreTests
