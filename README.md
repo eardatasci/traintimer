@@ -5,7 +5,7 @@ next trains come. Click for every line at the four closest stations.
 
 <p align="center"><img src="docs/screenshot.png" width="360" alt="Train Timer's dropdown showing live arrivals at 14 St-Union Sq, 3 Av, 8 St-NYU and Astor Pl"></p>
 
-- **Glanceable:** the menu bar shows the next trains you can still make, like `🚇 6 1m · 4 5m`.
+- **Glanceable:** the menu bar shows the next trains you can still make, in their route colors, like 🟢6 1m 🟢4 5m.
 - **Every line nearby:** each route and direction at the four closest stations, with walking time.
   Transfer complexes like Times Sq count as one station.
 - **Knows you have to walk:** trains that leave before you could get to the platform are dimmed.

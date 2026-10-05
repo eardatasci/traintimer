@@ -120,19 +120,25 @@ public struct StationBoard: Sendable, Equatable, Identifiable {
         time.timeIntervalSince(now) >= TimeInterval(station.walkingMinutes * 60)
     }
 
-    /// The menu bar text: the next catchable train on each of the first few routes,
-    /// e.g. "L 4m · 6 5m". Direction is left to the dropdown to keep this glanceable.
-    public func menuBarSummary(now: Date, limit: Int = 2) -> String? {
+    /// What the menu bar shows: the next catchable train on each of the first few routes, soonest first.
+    /// Direction is left to the dropdown to keep this glanceable.
+    public func menuBarArrivals(now: Date, limit: Int = 2) -> [MenuBarArrival] {
         let catchable = groups
             .compactMap { group in
-                group.times.first { isCatchable($0, now: now) }.map { (symbol: RouteStyle(routeID: group.routeID).symbol, time: $0) }
+                group.times.first { isCatchable($0, now: now) }.map { (route: RouteStyle(routeID: group.routeID), time: $0) }
             }
             .sorted { $0.time < $1.time }
         var seen = Set<String>()
-        let next = catchable.filter { seen.insert($0.symbol).inserted }.prefix(limit)
-        guard !next.isEmpty else { return nil }
-        return next.map { "\($0.symbol) \(Self.minutesLabel(until: $0.time, now: now))" }
-            .joined(separator: " · ")
+        return catchable.filter { seen.insert($0.route.symbol).inserted }
+            .prefix(limit)
+            .map { MenuBarArrival(route: $0.route, minutes: Self.minutesLabel(until: $0.time, now: now)) }
+    }
+
+    /// The menu bar arrivals as text, e.g. "L 4m · 6 5m".
+    public func menuBarSummary(now: Date, limit: Int = 2) -> String? {
+        let arrivals = menuBarArrivals(now: now, limit: limit)
+        guard !arrivals.isEmpty else { return nil }
+        return arrivals.map { "\($0.route.symbol) \($0.minutes)" }.joined(separator: " · ")
     }
 
     /// Whole minutes until `time`, rounded down like platform countdown clocks: "now", "1m", "12m".
@@ -140,4 +146,11 @@ public struct StationBoard: Sendable, Equatable, Identifiable {
         let minutes = Int(time.timeIntervalSince(now) / 60)
         return minutes <= 0 ? "now" : "\(minutes)m"
     }
+}
+
+/// One route in the menu bar: its bullet and how long until its next catchable train.
+public struct MenuBarArrival: Sendable, Equatable {
+    public var route: RouteStyle
+    /// "now", "4m"
+    public var minutes: String
 }

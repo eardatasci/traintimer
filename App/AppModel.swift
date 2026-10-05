@@ -55,9 +55,9 @@ final class AppModel {
         }
     }
 
-    /// Menu bar text for the nearest station, e.g. "L 4m · 6 5m".
-    var menuBarSummary: String? {
-        boards.first?.menuBarSummary(now: now)
+    /// What the menu bar counts down to at the nearest station.
+    var menuBarArrivals: [MenuBarArrival] {
+        boards.first?.menuBarArrivals(now: now) ?? []
     }
 
     func refreshIfStale(olderThan age: TimeInterval) async {

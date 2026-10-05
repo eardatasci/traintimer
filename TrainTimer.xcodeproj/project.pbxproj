@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0064420CB7924290E7B09B69 /* TrainTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEFF6CCA5B8D24B0D8C67F0 /* TrainTimerApp.swift */; };
+		11C051D733F1E40912E48234 /* MenuBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282D3A7994B62AC4476800E7 /* MenuBarLabel.swift */; };
 		23331AE169EA9B7F227797C6 /* stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 118859AEC3474365EAB0CA29 /* stations.csv */; };
 		46360211456D5ED1CB328BFA /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D0234B36602B50C3B9E7C /* LocationProvider.swift */; };
 		5463835D0B5B8FD511A5972E /* RouteBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCBB3F642A63F9C8BC79CB /* RouteBullet.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		053A8A8096F977A943909502 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		118859AEC3474365EAB0CA29 /* stations.csv */ = {isa = PBXFileReference; path = stations.csv; sourceTree = "<group>"; };
+		282D3A7994B62AC4476800E7 /* MenuBarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLabel.swift; sourceTree = "<group>"; };
 		288A2D17987D3F4A54CC72A5 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		32F178B67A9658026DCB1C41 /* TrainTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainTimer.entitlements; sourceTree = "<group>"; };
 		45DC7B69E1FB23F92E85C590 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				45DC7B69E1FB23F92E85C590 /* AppModel.swift */,
 				7878EBEEA655240F305A00E9 /* Info.plist */,
 				610D0234B36602B50C3B9E7C /* LocationProvider.swift */,
+				282D3A7994B62AC4476800E7 /* MenuBarLabel.swift */,
 				5EA5F65A20B37AC4B0681029 /* MenuContentView.swift */,
 				C2DCBB3F642A63F9C8BC79CB /* RouteBullet.swift */,
 				32F178B67A9658026DCB1C41 /* TrainTimer.entitlements */,
@@ -174,6 +177,7 @@
 				80117495BBF8F69675457A9B /* AppInfo.swift in Sources */,
 				FF35F33F2F084FF52882AA91 /* AppModel.swift in Sources */,
 				46360211456D5ED1CB328BFA /* LocationProvider.swift in Sources */,
+				11C051D733F1E40912E48234 /* MenuBarLabel.swift in Sources */,
 				D0D12C8319346CF79F87A880 /* MenuContentView.swift in Sources */,
 				5463835D0B5B8FD511A5972E /* RouteBullet.swift in Sources */,
 				0064420CB7924290E7B09B69 /* TrainTimerApp.swift in Sources */,

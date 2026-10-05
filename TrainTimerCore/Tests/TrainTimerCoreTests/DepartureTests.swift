@@ -96,6 +96,10 @@ struct MenuBarSummaryTests {
         ])
         #expect(board.station.walkingMinutes == 5)
         #expect(board.menuBarSummary(now: now) == "6 5m · L 7m")
+        #expect(board.menuBarArrivals(now: now) == [
+            MenuBarArrival(route: RouteStyle(routeID: "6X"), minutes: "5m"),
+            MenuBarArrival(route: RouteStyle(routeID: "L"), minutes: "7m"),
+        ])
     }
 
     @Test func showsEachRouteOnceEvenWhenBothDirectionsAreDue() {

@@ -8,12 +8,7 @@ struct TrainTimerApp: App {
         MenuBarExtra {
             MenuContentView(model: model)
         } label: {
-            HStack {
-                Image(systemName: "tram.fill")
-                if let summary = model.menuBarSummary {
-                    Text(summary)
-                }
-            }
+            MenuBarLabel(arrivals: model.menuBarArrivals)
         }
         .menuBarExtraStyle(.window)
     }
